@@ -1,4 +1,11 @@
-// Your implementation here.
-// Hint: We need two actions!
+import counterStore from '../stores/counterStore';
 
-export default {}
+function increment () {
+  counterStore.increment();
+}
+
+function decrement () {
+  counterStore.decrement();
+}
+
+export default { increment, decrement }
